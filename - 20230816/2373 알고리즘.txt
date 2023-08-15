@@ -1,0 +1,32 @@
+1 w
+1 1 > w
+2 l
+2 1 > l / 2 2 > w
+3 l
+3 1 > l / 3 2 > l / 3 3 > w
+4 w
+4 1 > w / 4 2 > l / 4 3 > l / 4 4 > w
+5 l
+5 1 > l / 5 2 > l
+
+
+fibo n < fibo n-2 * 3
+>> fibo n에서 이기려면 fibo n-2 미만을 가져가야 함.
+
+
+13 > 11 > 8
+13 > 12 > 11(fibo8+fibo3) > 9 > 8
+
+이전 fibo까지 차이가 5(fibo n-2)
+fibo n-4이상 가져가면 fibo n-1로 만들 수 있음.
+fibo n-4 미만 가져가면 fibo n-1 + fibo n-3으로.
+fibo n-1 + fibo n-3 + fibo n-5 ..? >> fibo n-1개를 넘겨주도록 유도 가능.
+
+x에서 fibo max로 넘겨줘야함.
+x-fibo max에 대해 x2로 적용 가능.
+min first값을 구하기 위해 반복.
+
+x=fibo의 경우 x를 return하도록 적용.
+
+
+>> 제켄도르프 표현.
