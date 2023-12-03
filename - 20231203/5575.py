@@ -1,0 +1,1 @@
+[print((lambda x:str(int(x[0]))+' '+str(int(x[1]))+' '+str(int(x[2])))((lambda x: [(x-x%3600)/3600, (x%3600-x%60)/60, x%60])((lambda x:((x[3]-x[0])*3600+(x[4]-x[1])*60+(x[5]-x[2])))(list(map(int,input().split(' '))))))) for i in range(3)]
